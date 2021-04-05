@@ -24,24 +24,31 @@
 
 //#2
 
-// let firstString = 'Be my Valentine';
-// let secondString = 'C&C Red Alert 3';
-// let thirdString = 'WTF';
+let firstString = 'Be my Valentine';
+let secondString = 'C&C Red Alert 3';
+let thirdString = 'WTF';
 
 
-// function replaceRegister(string) {
-//   for (let i = 0; i < string.length; i++) {
-//     if (string[i] === string[i].toUpperCase()) {
-//       console.log(string[i].toLowerCase());
-//     } else {
-//       console.log(string[i].toUpperCase());
-//     };
+function replaceRegister(string) {
+  string = string.split('')
+  let arr = []
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === string[i].toUpperCase()) {
+      arr.push(string[i].toLowerCase())
+    } else {
+      arr.push(string[i].toUpperCase())
+    };
 
-//   }
-// }
-// replaceRegister(firstString);
-// replaceRegister(secondString);
-// replaceRegister(thirdString);
+  }
+  return arr.join('')
+}
+
+console.log(replaceRegister(firstString))
+console.log(replaceRegister(secondString))
+console.log(replaceRegister(thirdString))
+
+
+
 
 
 //==========================================================================
@@ -52,12 +59,12 @@
 
 
 // let obj = {
-//   symbolsWithoutSpaces: WithoutSpaces(firstString),
+//   symbolsWithoutSpaces: withoutSpaces(firstString),
 //   quantityOfWords: quantityOfWords(firstString),
 //   sentenceType: sentenceType(firstString)
 // }
 
-// function WithoutSpaces(ssymbolsWithoutSpaces) {
+// function withoutSpaces(ssymbolsWithoutSpaces) {
 //   return ssymbolsWithoutSpaces.replace(/ /g, '').length;
 // }
 // function quantityOfWords(words) {
@@ -74,6 +81,7 @@
 //     return null
 //   }
 // }
+
 // console.log(obj)
 //==========================================================================
 
