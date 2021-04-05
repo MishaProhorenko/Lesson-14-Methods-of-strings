@@ -11,14 +11,14 @@
 
 // function truncate(str, length) {   
 //     if(str.length > length) {
-//       console.log(str.slice(0, length) + '…')      
+//       return str.slice(0, length) + '…'    
 //     } else {
-//       console.log(str)
+//       return str
 //     }
 //   }
-// truncate(firstSentence,30);
-// truncate(secondSentence, 30);
-// truncate(thirdSentence, 30);
+// console.log(truncate(firstSentence,30)) ;
+// console.log(truncate(secondSentence, 30));
+// console.log(truncate(thirdSentence, 30));
 
 //==========================================================================
 
@@ -48,33 +48,33 @@
 
 //#3
 
-let firstString = 'Be my Valentine.';
+// let firstString = 'Be my Valentine.';
 
 
-let obj = {
-  symbolsWithoutSpaces: WithoutSpaces(firstString),
-  quantityOfWords: quantityOfWords(firstString),
-  sentenceType: sentenceType(firstString)
-}
+// let obj = {
+//   symbolsWithoutSpaces: WithoutSpaces(firstString),
+//   quantityOfWords: quantityOfWords(firstString),
+//   sentenceType: sentenceType(firstString)
+// }
 
-function WithoutSpaces(ssymbolsWithoutSpaces) {
-  return ssymbolsWithoutSpaces.replace(/ /g, '').length;
-}
-function quantityOfWords(words) {
-  return words.split(' ').length
-}
-function sentenceType(typeSentence) {
-  if (typeSentence[typeSentence.length - 1] === '!') {
-    return 'Восклицательное'
-  } else if (typeSentence[typeSentence.length - 1] === '?') {
-    return 'Вопросительное'
-  } else if (typeSentence[typeSentence.length - 1] === '.') {
-    return 'Утвердительное'
-  } else {
-    return null
-  }
-}
-console.log(obj)
+// function WithoutSpaces(ssymbolsWithoutSpaces) {
+//   return ssymbolsWithoutSpaces.replace(/ /g, '').length;
+// }
+// function quantityOfWords(words) {
+//   return words.split(' ').length
+// }
+// function sentenceType(typeSentence) {
+//   if (typeSentence[typeSentence.length - 1] === '!') {
+//     return 'Восклицательное'
+//   } else if (typeSentence[typeSentence.length - 1] === '?') {
+//     return 'Вопросительное'
+//   } else if (typeSentence[typeSentence.length - 1] === '.') {
+//     return 'Утвердительное'
+//   } else {
+//     return null
+//   }
+// }
+// console.log(obj)
 //==========================================================================
 
 //#4
