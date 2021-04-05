@@ -24,65 +24,53 @@
 
 //#2
 
-let firstString = 'Be my Valentine';
-let secondString = 'C&C Red Alert 3';
-let thirdString = 'WTF';
+// let firstString = 'Be my Valentine';
+// let secondString = 'C&C Red Alert 3';
+// let thirdString = 'WTF';
 
 
-function replaceRegister(string) {
-  string = string.split('')
-  let arr = []
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === string[i].toUpperCase()) {
-      arr.push(string[i].toLowerCase())
-    } else {
-      arr.push(string[i].toUpperCase())
-    };
+// function replaceRegister(string) {
+//   string = string.split('')
+//   let arr = []
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] === string[i].toUpperCase()) {
+//       arr.push(string[i].toLowerCase())
+//     } else {
+//       arr.push(string[i].toUpperCase())
+//     };
 
-  }
-  return arr.join('')
-}
+//   }
+//   return arr.join('')
+// }
 
-console.log(replaceRegister(firstString))
-console.log(replaceRegister(secondString))
-console.log(replaceRegister(thirdString))
-
-
-
-
+// console.log(replaceRegister(firstString))
+// console.log(replaceRegister(secondString))
+// console.log(replaceRegister(thirdString))
 
 //==========================================================================
 
 //#3
 
-// let firstString = 'Be my Valentine.';
+// let firstString = 'Be my Valentine?';
 
-
-// let obj = {
-//   symbolsWithoutSpaces: withoutSpaces(firstString),
-//   quantityOfWords: quantityOfWords(firstString),
-//   sentenceType: sentenceType(firstString)
-// }
-
-// function withoutSpaces(ssymbolsWithoutSpaces) {
-//   return ssymbolsWithoutSpaces.replace(/ /g, '').length;
-// }
-// function quantityOfWords(words) {
-//   return words.split(' ').length
-// }
-// function sentenceType(typeSentence) {
-//   if (typeSentence[typeSentence.length - 1] === '!') {
-//     return 'Восклицательное'
-//   } else if (typeSentence[typeSentence.length - 1] === '?') {
-//     return 'Вопросительное'
-//   } else if (typeSentence[typeSentence.length - 1] === '.') {
-//     return 'Утвердительное'
+// let jobWhithString = (string) => {
+//   let obj = {};
+//   obj.symbolsWithoutSpaces = string.replace(/ /g, '').length;
+//   obj.quantityOfWords = string.split(' ').length
+//   if (string[string.length - 1] === '!') {
+//     obj.sentenceType = 'Восклицательное'
+//   } else if (string[string.length - 1] === '?') {
+//     obj.sentenceType = 'Вопросительное'
+//   } else if (string[string.length - 1] === '.') {
+//     obj.sentenceType = 'Утвердительное'
 //   } else {
-//     return null
+//     obj.sentenceType = null
 //   }
+//   return obj
 // }
+// console.log(jobWhithString(firstString))
 
-// console.log(obj)
+
 //==========================================================================
 
 //#4
